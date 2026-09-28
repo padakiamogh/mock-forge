@@ -1,0 +1,35 @@
+{
+  "name": "mock-forge",
+  "version": "1.0.0",
+  "description": "Real-Time Context-Aware API Mock Engine - mock REST and GraphQL APIs with session state, overrides, and SSE",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/padakiamogh/mock-forge.git"
+    },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",           
+  "prepare": "npm run build",  
+  "start": "node dist/server/index.js",  
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
+  },
+  "keywords": ["mock", "api-mock", "testing", "frontend", "contract-driven"],
+  "author": "Amogh Rao P",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^13.1.0",
+    "better-sqlite3": "^13.0.3",
+    "fastify": "^5.12.5",
+    "ts-morph": "^28.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
+  }
+}
